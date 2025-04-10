@@ -18,10 +18,31 @@
       color: #2e2e2e;
     }
     header {
-      padding: 2rem;
-      text-align: center;
       background-color: #2e2e2e;
       color: #fff;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #c14e2f;
     }
     header h1 {
       font-size: 2.5rem;
@@ -69,6 +90,12 @@
     <p>We're here to help you with what soooots you best.</p>
   </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+
   <section class="confusion-selector">
     <div class="confusion-box">
       <h2>Outfits</h2>
@@ -94,6 +121,16 @@
       <h2>Hobbies & Lifestyle</h2>
       <p>Use your time creatively and meaningfully</p>
     </div>
+  </section>
+
+  <section id="about" style="max-width: 700px; margin: 4rem auto; padding: 2rem; text-align: center;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">About Soooots</h2>
+    <p>We're your thoughtful assistant in life's daily decisions — from what to wear, where to go, to how to handle relationships and diet. We give you tailored suggestions, written by real people, to help you find what truly "soooots" you.</p>
+  </section>
+
+  <section id="feedback" style="max-width: 700px; margin: 4rem auto; padding: 2rem; text-align: center;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Send Us Your Feedback</h2>
+    <p>Have a suggestion or a confusion you'd like us to write about? Email us at <a href="mailto:hello@soooots.com">hello@soooots.com</a></p>
   </section>
 
   <footer>
