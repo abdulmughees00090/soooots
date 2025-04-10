@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion Blog</title>
+
+    <!-- Inline CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-image: url('https://via.placeholder.com/1500x600?text=Fashion+Banner');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+        }
+
+        .banner p {
+            font-size: 24px;
+        }
+
+        /* About Section */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        /* Latest Trends Section */
+        .trends {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .trend-item {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .trend-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #f4f4f4;
+        }
+
+        .trend-item h3 {
+            font-size: 24px;
+            color: #333;
+            padding: 15px;
+        }
+
+        .trend-item a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-size: 16px;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ff6f61;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .trend-item a:hover {
+            background-color: #ff6f61;
+            color: #fff;
+        }
+
+        /* Video Section */
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .video iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 8px;
+        }
+
+        .video p {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Contact Form */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #e55f50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#latest">Latest Trends</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Banner -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Welcome to the World of Women's Fashion</h1>
+            <p>Stay updated with the latest fashion trends, styling tips, and more!</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Our Blog</h2>
+        <p>Our blog is dedicated to bringing you the latest in women's fashion—whether it's high street, chic street style, or luxury couture, we've got it covered!</p>
+    </section>
+
+    <!-- Latest Fashion Trends -->
+    <section id="latest">
+        <h2>Latest Fashion Trends</h2>
+        <div class="trends">
+            <div class="trend-item">
+                <img src="https://via.placeholder.com/600x400?text=Summer+Dresses" alt="Latest Trend 1">
+                <h3>Chic Summer Dresses</h3>
+                <p>Look cool and stylish in the hottest summer dresses of the year.</p>
+                <a href="https://www.example.com/summer-dresses" target="_blank">Read More</a>
+            </div>
+            <div class="trend-item">
+                <img src="https://via.placeholder.com/600x400?text=Bohemian+Vibes" alt="Latest Trend 2">
+                <h3>Bohemian Vibes</h3>
+                <p>Embrace the boho chic style with flowing dresses and earthy accessories.</p>
+                <a href="https://www.example.com/bohemian-vibes" target="_blank">Read More</a>
+            </div>
+            <div class="trend-item">
+                <img src="https://via.placeholder.com/600x400?text=Bold+Accessories" alt="Latest Trend 3">
+                <h3>Bold Accessories</h3>
+                <p>Transform any outfit with bold and statement-making accessories.</p>
+                <a href="https://www.example.com/bold-accessories" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Inspiration Videos -->
+    <section id="videos">
+        <h2>Fashion Inspiration Videos</h2>
+        <div class="videos">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <p>Fashion Trends 2025: The Must-Have Items</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+                <p>How to Style Your Wardrobe for Every Season</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Women's Fashion Blog | <a href="privacy.html" target="_blank">Privacy Policy</a> | <a href="terms.html" target="_blank">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
