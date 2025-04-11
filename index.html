@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Confused about outfits, relationships, diet, or life decisions? Let Soooots.com help you find what suits you best." />
-  <title>Soooots — What Soooots Me</title>
+  <title>Soooots — What Soooots You Best</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
@@ -24,21 +24,24 @@
       color: #fff;
       padding: 2rem 1rem 1rem;
       text-align: center;
-      position: relative;
     }
-    header .logo-container {
+    .logo-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    header img {
-      max-height: 150px;
+    .logo-container img {
+      max-height: 100px;
     }
-    header .slogan {
-      font-size: 1.1rem;
+    .logo-container p {
       margin-top: 0.5rem;
-      font-weight: 600;
+      font-weight: bold;
+      border-radius: 1rem;
+      padding: 0.2rem 1rem;
+      background-color: #fff;
+      color: #2e2e2e;
+      font-size: 1rem;
     }
     nav {
       position: sticky;
@@ -60,9 +63,24 @@
     nav a:hover {
       color: #c14e2f;
     }
+    .who-we-are {
+      max-width: 700px;
+      margin: 4rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    .confusion-intro {
+      max-width: 700px;
+      margin: 4rem auto 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    .confusion-intro h2 {
+      font-size: 1.8rem;
+    }
     .confusion-selector {
       max-width: 900px;
-      margin: 3rem auto;
+      margin: 0 auto 3rem;
       padding: 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -84,29 +102,15 @@
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
-    .suggestion-section {
+    .feedback-section {
+      max-width: 700px;
+      margin: 0 auto 4rem;
+      padding: 2rem;
       text-align: center;
-      margin: 3rem 0;
     }
-    .suggestion-section h2 {
+    .feedback-section h2 {
       font-size: 1.8rem;
-      color: #2e2e2e;
-    }
-    .suggestion-feedback {
-      text-align: center;
-      margin: 3rem 0;
-    }
-    .suggestion-feedback h2 {
-      font-size: 1.8rem;
-      color: #2e2e2e;
-    }
-    .suggestion-feedback a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #c14e2f;
-    }
-    .suggestion-feedback a:hover {
-      text-decoration: underline;
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
@@ -119,52 +123,56 @@
 <body>
   <header>
     <div class="logo-container">
-      <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
-      <p class="slogan">We're here to help you kill your confusion.</p>
+      <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo" />
+      <p>We're here to help you kill your confusion.</p>
     </div>
   </header>
 
   <nav>
     <a href="#">Home</a>
     <a href="#about">Who We Are</a>
-    <a href="#feedback">Suggest A Confusion</a>
+    <a href="#feedback">Feedback</a>
   </nav>
 
-  <!-- Replaced the "Who We Are" section text with "Just tell us what you're confused about today!" -->
-  <section class="suggestion-section">
+  <section class="confusion-intro">
     <h2>Just tell us what you're confused about today!</h2>
   </section>
 
   <section class="confusion-selector">
     <div class="confusion-box">
-      <h2>Outfits</h2>
+      <h2>What to Wear</h2>
       <p>Occasions, seasons, personality-based looks</p>
     </div>
     <div class="confusion-box">
-      <h2>Diet</h2>
+      <h2>What to Eat</h2>
       <p>Healthy choices, routines, and tips for your goals</p>
     </div>
     <div class="confusion-box">
-      <h2>Relationships</h2>
+      <h2>Dealing with People</h2>
       <p>Friendship, romance, family matters</p>
     </div>
     <div class="confusion-box">
-      <h2>Events & Travel</h2>
-      <p>What to do, where to go, and how to enjoy</p>
+      <h2>Where to Go</h2>
+      <p>Events, destinations, experiences</p>
     </div>
     <div class="confusion-box">
-      <h2>Self & Personality</h2>
-      <p>Improve, grow, and understand yourself</p>
+      <h2>Understanding Yourself</h2>
+      <p>Growth, reflection, personal goals</p>
     </div>
     <div class="confusion-box">
-      <h2>Hobbies & Lifestyle</h2>
-      <p>Use your time creatively and meaningfully</p>
+      <h2>Things to Do</h2>
+      <p>Passions, hobbies, and lifestyle ideas</p>
     </div>
   </section>
 
-  <section class="suggestion-feedback">
+  <section class="feedback-section" id="feedback">
     <h2>Or suggest a confusion you'd like us to write about</h2>
     <p>Email us at <a href="mailto:hello@soooots.com">hello@soooots.com</a></p>
+  </section>
+
+  <section class="who-we-are" id="about">
+    <h2>Who We Are</h2>
+    <p>We're your thoughtful assistant in life's daily decisions — from what to wear, where to go, to how to handle relationships and diet. We give you tailored suggestions, written by real people, to help you find what truly "soooots" you.</p>
   </section>
 
   <footer>
