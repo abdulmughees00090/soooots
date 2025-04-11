@@ -2,39 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>What to Eat</title>
-  <link rel="stylesheet" href="what-to-eat.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Confused about what to eat? Let Soooots.com help you kill the craving confusion with fun tips and ideas." />
+  <title>What to Eat — Soooots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #2e3d27;
+      line-height: 1.7;
+      background: url('https://github.com/abdulmughees00090/soooots/blob/main/what-to-eat/what-to-eat%20images/page%20background.jpg?raw=true') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background-color: #1e5631;
+      color: #fff;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+    header .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    header img {
+      max-height: 150px;
+    }
+    header .slogan {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e3d27;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #66bb6a;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 1rem;
+    }
+    h2 {
+      color: #1b5e20;
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>What to Eat</h1>
-    <p>Your guide to smarter food choices</p>
+    <div class="logo-container">
+      <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
+      <p class="slogan">Cravings? Let’s Eat Smart & Laugh About It!</p>
+    </div>
   </header>
 
-  <main id="article-container"></main>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">Who We Are</a>
+    <a href="../index.html#feedback">Suggest A Confusion</a>
+  </nav>
 
-  <script>
-    fetch('what-to-eat.json')
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('article-container');
-        data.articles.forEach((article, i) => {
-          const section = document.createElement('section');
-          section.className = i % 2 === 0 ? 'left-text' : 'right-text';
-          section.innerHTML = `
-            <div class="text">
-              <h2>${article.title}</h2>
-              <p>${article.content}</p>
-            </div>
-            <div class="image">
-              <img src="what-to-eat-images/${article.image}" alt="${article.title}" />
-            </div>
-          `;
-          container.appendChild(section);
-        });
-      });
-  </script>
+  <div class="container">
+    <p>
+      So, you’re confused about what to eat today? Welcome to the club! Let’s sort out this daily drama with a little fun.
+    </p>
+
+    <h2>Step 1: Ask Yourself a Very Serious Question</h2>
+    <p>
+      Are you actually hungry, or just bored? If the answer is hunger – congratulations! You're allowed to proceed. If it’s boredom... maybe drink some water, stretch, or scroll through food pics until your stomach gives you real signs.
+    </p>
+
+    <h2>Step 2: Raid the Kitchen</h2>
+    <p>
+      Open that fridge. No, wider. Anything edible? Something you forgot existed? Leftovers from a mysterious time? Good. Now either heat it up, or turn into a MasterChef and throw things in a pan like you know what you're doing.
+    </p>
+
+    <h2>Step 3: Cook? Order? Or Beg?</h2>
+    <p>
+      Cooking at home is noble (and budget-friendly). But if your energy is running on 2%, maybe order something delicious online. Still broke? Time to pay a friendly visit to your neighbors and casually ask, “So, what’s cooking?”
+    </p>
+
+    <h2>Step 4: Consider Your Lifestyle</h2>
+    <p>
+      Sitting all day? Maybe avoid five cheeseburgers. Active or sporty? Fuel up with good carbs and protein. Trying to eat light? Hello salads, soups, and everything that tastes like effort.
+    </p>
+
+    <h2>Step 5: Pick Something Based on Your Region</h2>
+    <p>
+      If you’re in Asia – rice and stir-fry always win. Mediterranean vibes? Grab olives, hummus, and flatbread. Cold region? Warm up with stew. Hot region? Cool off with fruits and yogurt.
+    </p>
+
+    <h2>Step 6: Your Health Matters (Yes, Really)</h2>
+    <ul>
+      <li><strong>Feeling low energy?</strong> Maybe grab bananas, nuts, or eggs.</li>
+      <li><strong>Trying to be fit?</strong> Go for grilled chicken, brown rice, and all things green.</li>
+      <li><strong>Have dietary needs?</strong> Stick to what works for your body, not just your cravings.</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+    <p>
+      Eat what feels good, fuels your body, and brings you a little joy. Whether it’s a gourmet meal or peanut butter toast, the real trick is listening to your body – and keeping things fun. Bon appétit!
+    </p>
+  </div>
 </body>
 </html>
