@@ -23,19 +23,22 @@
   background-color: #2e2e2e; /* Dark brown background */
   color: #fff;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  flex-direction: column; /* Makes logo and slogan stack vertically */
 }
 
 .logo-container {
   display: flex;
-  align-items: center;
-  gap: 1rem; /* Adjust spacing between logo and slogan */
+  flex-direction: column; /* Stack logo and slogan vertically */
+  align-items: center; /* Center them horizontally */
+  gap: 0.5rem; /* Space between logo and slogan */
 }
 
 header img {
-  max-height: 100px;
+  max-height: 150px; /* Increased size of the logo */
 }
 
 .slogan {
@@ -46,6 +49,7 @@ header img {
   font-size: 1.1rem;
   color: #2e2e2e;
 }
+
     nav {
       position: sticky;
       top: 0;
@@ -123,6 +127,7 @@ header img {
     <p class="slogan">We're here to help you kill your confusion.</p>
   </div>
 </header>
+
 
   <nav>
     <a href="#">Home</a>
