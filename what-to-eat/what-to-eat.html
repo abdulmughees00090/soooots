@@ -1,0 +1,47 @@
+<body>
+  <header>
+    <h1>What to Eat</h1>
+  </header>
+
+  <div id="article-container"></div> <!-- Dynamic content goes here -->
+
+  <footer>
+    &copy; 2025 Soooots.com — All rights reserved.
+  </footer>
+
+  <script>
+    fetch('what-to-eat-articles.json') // Load from your JSON file
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('article-container');
+        data.forEach((section, index) => {
+          const sectionDiv = document.createElement('div');
+          const isLeft = section.align === 'left';
+
+          sectionDiv.className = 'section ' + (isLeft ? 'section-left' : 'section-center-left');
+          sectionDiv.innerHTML = `
+            ${isLeft ? `
+              <div class="section-text">
+                <h2>${section.title}</h2>
+                <p>${section.text}</p>
+              </div>
+              <div class="section-image">
+                <img src="${section.image}" alt="${section.title}">
+              </div>` : `
+              <div class="section-image">
+                <img src="${section.image}" alt="${section.title}">
+              </div>
+              <div class="section-text">
+                <h2>${section.title}</h2>
+                <p>${section.text}</p>
+              </div>`}
+          `;
+          container.appendChild(sectionDiv);
+        });
+      })
+      .catch(error => {
+        console.error('Error loading JSON:', error);
+        document.getElementById('article-container').innerHTML = "<p style='padding:2rem;'>Couldn't load articles.</p>";
+      });
+  </script>
+</body>
