@@ -20,12 +20,31 @@
       color: #2e2e2e;
     }
     header {
-      background-color: #2e2e2e;
-      color: #fff;
-      padding: 2rem 1rem 1rem;
-      text-align: center;
-      position: relative;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adjust spacing between logo and slogan */
+}
+
+header img {
+  max-height: 100px;
+}
+
+.slogan {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background-color: #f7f7f7;
+  font-size: 1.1rem;
+  color: #2e2e2e;
+}
+
     nav {
       position: sticky;
       top: 0;
@@ -98,9 +117,12 @@
 </head>
 <body>
   <header>
-    <h1>Soooots</h1>
-    <p>We're here to help you with what soooots you best.</p>
-  </header>
+  <div class="logo-container">
+    <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
+    <p class="slogan">We're here to help you kill your confusion.</p>
+  </div>
+</header>
+
 
   <nav>
     <a href="#">Home</a>
