@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Confused about outfits, relationships, diet, or life decisions? Let Soooots.com help you find what suits you best." />
-  <title>Soooots — What Soooots Me</title>
+  <meta name="description" content="Discover what Soooots.com is all about. We're here to help you kill your confusion through curated suggestions on everyday decisions." />
+  <title>Who We Are — Soooots</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,13 +14,13 @@
     }
     body {
       font-family: 'Raleway', sans-serif;
-      background: url('https://github.com/abdulmughees00090/soooots/blob/main/Soooots_background_new.png?raw=true');
+      background: url('https://github.com/abdulmughees00090/soooots/blob/main/website-mages/who-we-are-bg.jpg?raw=true');
       background-repeat: repeat;
-      background-size: contain;
+      background-size: cover;
       color: #2e2e2e;
     }
     header {
-      background-color: #2e2e2e;
+      background-color: #c6a4e6; /* light purple */
       color: #fff;
       padding: 2rem 1rem 1rem;
       text-align: center;
@@ -58,78 +58,23 @@
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #c14e2f;
+      color: #9c40c4;
     }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      z-index: 1;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .dropdown-content a {
-      color: #2e2e2e;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    .confusion-selector {
+    .content {
       max-width: 900px;
       margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.9);
       padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .confusion-box {
-      background: #fff;
-      padding: 1.5rem;
       border-radius: 1rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
       text-align: center;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    .confusion-box:hover {
-      transform: translateY(-5px);
-    }
-    .confusion-box h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .suggestion-section {
-      text-align: center;
-      margin: 3rem 0;
-    }
-    .suggestion-section h2 {
-      font-size: 1.8rem;
-      color: #2e2e2e;
-    }
-    .suggestion-feedback {
-      text-align: center;
-      margin: 3rem 0;
-    }
-    .suggestion-feedback h2 {
-      font-size: 1.8rem;
-      color: #2e2e2e;
-    }
-    .suggestion-feedback a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #c14e2f;
-    }
-    .suggestion-feedback a:hover {
-      text-decoration: underline;
+      color: #6a1b9a;
     }
     footer {
       text-align: center;
@@ -137,16 +82,10 @@
       font-size: 0.9rem;
       color: #777;
     }
-    a.confusion-link:link,
-    a.confusion-link:visited,
-    a.confusion-link:hover,
-    a.confusion-link:active {
-      color: inherit;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo-container">
       <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
@@ -155,68 +94,48 @@
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#about">Who We Are</a>
-    <div class="dropdown">
-      <a href="#">Confusions</a>
-      <div class="dropdown-content">
-        <a href="what-to-wear/what-to-wear.html">What to Wear</a>
-        <a href="what-to-eat/what-to-eat.html">What to Eat</a>
-        <a href="dealing-with-people/dealing-with-people.html">Dealing with People</a>
-        <a href="where-to-go/where-to-go.html">Where to Go</a>
-        <a href="know-myself/know-myself.html">Know Myself</a>
-        <a href="things-to-do/things-to-do.html">Things to Do</a>
-      </div>
-    </div>
-    <a href="#feedback">Suggest A Confusion</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="index.html">Home</a>
+    <a href="who-we-are.html">Who We Are</a>
+    <a href="suggest-a-confusion.html">Suggest A Confusion</a>
     <a href="write-to-us.html">Write to Us</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </nav>
 
-  <section class="suggestion-section">
-    <h2>Just tell us what you're confused about today!</h2>
-  </section>
+  <section class="content">
+    <h1>Who We Are</h1>
+    <p>
+      Soooots.com was born out of a simple yet universal feeling — **confusion**. Every day, millions of people struggle with small but meaningful decisions:
+      What should I wear to this event? What should I eat today? How do I handle this situation? Where should I go this weekend? How can I improve myself?
+    </p>
 
-  <section class="confusion-selector">
-    <a href="what-to-wear/what-to-wear.html" class="confusion-link">
-    <div class="confusion-box">
-      <h2>What to Wear</h2>
-      <p>Occasions, seasons, personality-based looks</p>
-    </div>
-    <a href="what-to-eat/what-to-eat.html" class="confusion-link">
-      <div class="confusion-box">
-        <h2>What to eat</h2>
-        <p>Healthy choices, routines, and tips for your goals</p>
-      </div>
-    <a href="dealing-with-people/dealing-with-people.html" class="confusion-link">
-    <div class="confusion-box">
-      <h2>Dealing With People</h2>
-      <p>Friendship, romance, family matters</p>
-    </div>
-    <a href="where-to-go/where-to-go.html" class="confusion-link">
-      <div class="confusion-box">
-      <h2>Where to Go</h2>
-      <p>What to do, where to go, and how to enjoy</p>
-    </div>
-    <a href="know-myself/know-myself.html" class="confusion-link">
-    <div class="confusion-box">
-      <h2>Know Myself</h2>
-      <p>Improve, grow, and understand yourself</p>
-    </div>
-    <a href="things-to-do/things-to-do.html" class="confusion-link">
-    <div class="confusion-box">
-      <h2>Things to Do</h2>
-      <p>Use your time creatively and meaningfully</p>
-    </div>
-  </section>
+    <p>
+      These questions may sound ordinary, but they can drain our mental energy. That’s where **Soooots** comes in. We're not just a website — we're a digital friend that listens to your uncertainty and gently nudges you in the right direction.
+    </p>
 
-  <section class="suggestion-feedback">
-    <h2>Or suggest a confusion you'd like us to write about</h2>
-    <p>Email us at <a href="mailto:hello@soooots.com">hello@soooots.com</a></p>
+    <p>
+      Our purpose is simple: to help you **kill your confusion** — one thoughtful suggestion at a time. From outfits and food choices to personal development, relationships, and more, we collect expert advice, real-life tips, and curated guidance and organize it for quick, easy access.
+    </p>
+
+    <p>
+      Instead of endlessly scrolling social media or feeling stuck in your head, come to Soooots and explore options that truly suit *you*. Whether you're dressing for a wedding, choosing a new diet, dealing with someone difficult, or just trying to understand yourself better — we’re here to help.
+    </p>
+
+    <p>
+      Each section of Soooots is designed with empathy, clarity, and actionability. We aim to make your decision-making journey feel more human, less overwhelming, and even a little fun.
+    </p>
+
+    <p>
+      We’re constantly growing and evolving. If there’s a topic you want us to cover or a kind of confusion you often deal with, just head over to <strong>“Suggest A Confusion”</strong> — we’d love to hear from you.
+    </p>
+
+    <p>
+      Welcome to Soooots — because life’s too short to stay confused.
+    </p>
   </section>
 
   <footer>
     &copy; 2025 Soooots.com — All rights reserved.
   </footer>
+
 </body>
 </html>
