@@ -201,6 +201,33 @@
   <footer>
     &copy; 2025 Soooots.com — All rights reserved.
   </footer>
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch("https://formspree.io/f/xjkyljpk", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          document.getElementById("thankYouMessage").style.display = "block";
+        } else {
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      })
+      .catch(() => {
+        alert("There was a problem submitting your form.");
+      });
+  });
+</script>
 
 </body>
 </html>
