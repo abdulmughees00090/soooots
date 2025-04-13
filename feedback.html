@@ -202,7 +202,7 @@ form button:hover {
 
   <section class="content">
     <h1>Suggest a Confusion</h1>
-    <form id="feedbackForm">
+<form id="feedbackForm">
   <label for="name">Your Name:</label><br />
   <input type="text" id="name" name="name" required><br /><br />
 
@@ -213,6 +213,7 @@ form button:hover {
   <textarea id="feedback" name="message" rows="5" required></textarea><br /><br />
 
   <button type="submit">Send Feedback</button>
+  <input type="hidden" name="source" value="Feedback Page">
 </form>
 
 <div id="thankYouMessage" style="display:none; margin-top: 20px; color: green;">
