@@ -177,13 +177,19 @@
 
   <section class="content">
     <h1>Suggest a Confusion</h1>
-    <form action="mailto:your@email.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <input type="text" name="Topic" placeholder="Confusion Topic Suggestion" required />
-      <textarea name="Details" placeholder="Tell us more about this confusion or why you think it should be featured."></textarea>
-      <button type="submit">Submit Suggestion</button>
-    </form>
+    <form action="https://formspree.io/f/xjkyljpk" method="POST">
+  <label for="name">Your Name:</label><br />
+  <input type="text" id="name" name="name" required><br /><br />
+
+  <label for="email">Your Email:</label><br />
+  <input type="email" id="email" name="email" required><br /><br />
+
+  <label for="feedback">Your Feedback:</label><br />
+  <textarea id="feedback" name="message" rows="5" required></textarea><br /><br />
+
+  <button type="submit">Send Feedback</button>
+</form>
+
   </section>
 
   <footer>
