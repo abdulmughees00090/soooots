@@ -209,14 +209,17 @@ form button:hover {
   <label for="email">Your Email:</label><br />
   <input type="email" id="email" name="email" required><br /><br />
 
-  <label for="feedback">Your Feedback:</label><br />
-  <textarea id="feedback" name="message" rows="5" required></textarea><br /><br />
+  <label for="SuggestionType">Suggestion Category:</label><br />
+  <textarea id="suggestionType" name="suggestion category" rows="1" required></textarea><br /><br />
 
+  <label for="suggestiondetail">Tell us more about suggestion:</label><br />
+  <textarea id="suggestiondetails" name="suggestion details" rows="5" required></textarea><br /><br />
+  
   <button type="submit">Send Feedback</button>
   <input type="hidden" name="source" value="Feedback Page">
 </form>
 
-<div id="thankYouMessage" style="display:none; margin-top: 20px; color: green;">
+<div id="thankYouMessage" style="display:none; margin-top: 20px; color: #b94e58;">
   Thank you for your feedback! ❤️
 </div>
 
