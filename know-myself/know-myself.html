@@ -50,34 +50,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-weight: 600;
     }
 /*navbar starts*/
-/* Desktop default */
-nav.navbar {
+/* Base layout */
+.header {
   position: sticky;
   top: 0;
   background: #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Full menu bar - visible only on desktop */
+nav.navbar {
+  width: 100%;
+}
+
+.menu {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
-  z-index: 1000;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.navbar a {
+.menu a {
   text-decoration: none;
   color: #4a4a4a;
   font-weight: 600;
   transition: color 0.3s;
 }
 
-.navbar a:hover {
+.menu a:hover {
   color: #ffb6c1;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -103,58 +113,45 @@ nav.navbar {
   background-color: #ddd;
 }
 
-/* Hamburger button */
+/* Hamburger icon */
 .hamburger {
   display: none;
   font-size: 28px;
   color: #4a4a4a;
   cursor: pointer;
   user-select: none;
-  margin-right: auto;
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
-/* Hide checkbox input */
 #menu-toggle {
   display: none;
 }
 
-/* Responsive mobile tweaks */
+/* Mobile styles */
 @media screen and (max-width: 768px) {
-  nav.navbar {
-    justify-content: flex-start;
+  .menu {
+    display: none;
     flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 0.5rem 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  #menu-toggle:checked + .hamburger + nav .menu {
+    display: flex;
   }
 
   .hamburger {
     display: block;
   }
 
-  .menu {
-    display: none;
-    flex-direction: column;
+  nav.navbar {
     width: 100%;
-    background: #fff;
-    padding: 1rem 0;
-  }
-
-  #menu-toggle:checked + .hamburger + .menu {
-    display: flex;
-  }
-
-  .menu a, .dropdown {
-    padding: 0.75rem 1rem;
-    width: 100%;
-    text-align: left;
   }
 
   .dropdown-content {
     position: static;
-    background-color: #f9f9f9;
-    box-shadow: none;
+    background: #f9f9f9;
     padding-left: 1rem;
   }
 
@@ -162,7 +159,6 @@ nav.navbar {
     display: block;
   }
 }
-
 /*navbar ends*/
     .container {
       padding: 2rem;
@@ -351,29 +347,33 @@ p {
     </div>
   </header>
 
-<nav class="navbar">
+<!-- NAVIGATION -->
+<header class="header">
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-  <div class="menu">
-    <a href="/">Home</a>
-    <a href="/who-we-are.html">Who We Are</a>
-    <div class="dropdown">
-      <a href="#">Confusions</a>
-      <div class="dropdown-content">
-        <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
-        <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
-        <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
-        <a href="/where-to-go/where-to-go.html">Where to Go</a>
-        <a href="/know-myself/know-myself.html">Know Myself</a>
-        <a href="/things-to-do/things-to-do.html">Things to Do</a>
-        <a href="/feedback.html">Suggest A Confusion</a>
+  <nav class="navbar">
+    <div class="menu">
+      <a href="/">Home</a>
+      <a href="/who-we-are.html">Who We Are</a>
+      <div class="dropdown">
+        <a href="#">Confusions</a>
+        <div class="dropdown-content">
+          <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
+          <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
+          <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
+          <a href="/where-to-go/where-to-go.html">Where to Go</a>
+          <a href="/know-myself/know-myself.html">Know Myself</a>
+          <a href="/things-to-do/things-to-do.html">Things to Do</a>
+          <a href="/feedback.html">Suggest A Confusion</a>
+        </div>
       </div>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/write-to-us.html">Write to Us</a>
     </div>
-    <a href="/privacy-policy.html">Privacy Policy</a>
-    <a href="/write-to-us.html">Write to Us</a>
-  </div>
-</nav>
+  </nav>
+</header>
+
 
   <div class="container">
     <p>
