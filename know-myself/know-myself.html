@@ -332,6 +332,40 @@ p {
   }
 }
  /*Additional CSS for Mobile Ends*/
+	  /*for share buttons*/
+	  @media screen and (max-width: 768px) {
+  .share-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ffb6c1;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .share-buttons a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #ffb6c1;
+  }
+}
+/***********************/
+	  .table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.suggestion-chart {
+  min-width: 600px;
+}
+/**********************/
   </style>
 	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2QEDPZZ5M"></script>
 <script>
@@ -399,7 +433,8 @@ p {
       Consider your inner self as a collection of unique islands – your strengths, your passions, your values. When feeling overlooked, it's time to navigate this archipelago. What are the skills that hum with energy when you engage them? What principles are non-negotiable in your life's compass? Identifying these internal landmarks provides an unwavering sense of self.
     </p>
     <h3>Suggestion Chart: Mapping Your Inner Islands</h3>
-    <table class="suggestion-chart">
+    <div class="table-responsive">
+	  <table class="suggestion-chart">
       <thead>
         <tr>
           <th>Island Name (Category)</th>
@@ -425,6 +460,7 @@ p {
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2>The Alchemy of Inner Dialogue</h2>
     <p>
@@ -444,7 +480,8 @@ p {
       Being ignored or underestimated can feel like a storm raging around your inner garden. Resilience is the ability to weather these storms without your core self being uprooted. Cultivate this resilience by practicing self-care, setting healthy boundaries, and acknowledging your emotions without letting them define you. Remember, a wilting flower can bloom again with the right nourishment.
     </p>
     <h3>Suggestion Chart: Nurturing Your Resilience Garden</h3>
-    <table class="suggestion-chart">
+    <div class="table-responsive">
+	  <table class="suggestion-chart">
       <thead>
         <tr>
           <th>Nourishment (Activity)</th>
@@ -470,7 +507,7 @@ p {
         </tr>
       </tbody>
     </table>
-
+    </div>
     <h2>The Quiet Power of Self-Awareness</h2>
     <p>
       Ultimately, knowing yourself when feeling ignored or underestimated is about cultivating a robust sense of self-awareness. It's about understanding your emotional landscape, recognizing your triggers, and knowing your inherent value. This inner knowing becomes your steadfast anchor, weathering the ebb and flow of external opinions. It's the quiet confidence that whispers, "I know who I am, regardless of whether you see it."
