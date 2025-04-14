@@ -261,6 +261,93 @@ p {
   }
 }
 /*Additional CSS for Mobile Ends*/
+	  /*new navigation bar for mobile starts*/
+	  /* Base navbar styles */
+.navbar {
+  background-color: #2f2f2f;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Dropdown menu style */
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 180px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #2f2f2f;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  .menu a, .dropdown {
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .navbar .dropdown-content {
+    position: static;
+    background-color: #333;
+    padding-left: 20px;
+  }
+
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+/*New navigation bar ends*/
   </style>
 	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2QEDPZZ5M"></script>
 <script>
@@ -279,24 +366,30 @@ p {
     </div>
   </header>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/who-we-are.html">Who We Are</a>
-  <div class="dropdown">
-    <a href="#">Confusions</a>
-    <div class="dropdown-content">
-      <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
-      <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
-      <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
-      <a href="/where-to-go/where-to-go.html">Where to Go</a>
-      <a href="/know-myself/know-myself.html">Know Myself</a>
-      <a href="/things-to-do/things-to-do.html">Things to Do</a>
-      <a href="/feedback.html">Suggest A Confusion</a>
+<nav class="navbar">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+  <div class="menu">
+    <a href="/">Home</a>
+    <a href="/who-we-are.html">Who We Are</a>
+    <div class="dropdown">
+      <a href="#">Confusions</a>
+      <div class="dropdown-content">
+        <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
+        <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
+        <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
+        <a href="/where-to-go/where-to-go.html">Where to Go</a>
+        <a href="/know-myself/know-myself.html">Know Myself</a>
+        <a href="/things-to-do/things-to-do.html">Things to Do</a>
+        <a href="/feedback.html">Suggest A Confusion</a>
+      </div>
     </div>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/write-to-us.html">Write to Us</a>
   </div>
-  <a href="/privacy-policy.html">Privacy Policy</a>
-  <a href="/write-to-us.html">Write to Us</a>
 </nav>
+
 
   <div class="container">
     <p>
