@@ -1,268 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Have a new confusion topic you'd like us to cover? Suggest it here and help us expand the Soooots guide!"/>
-  <title>Suggest a Confusion — What Soooots Me</title>
-     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P97FMK7L');</script>
-<!-- End Google Tag Manager -->
-    <!--Google Ads-->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573"
-     crossorigin="anonymous"></script>
-  <!-- Favicon -->
-  <link rel="icon" href="https://github.com/abdulmughees00090/soooots/blob/main/website-mages/what%20soooots%20me%20(favicon).png?raw=true" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Raleway', sans-serif;
-      background: url('https://github.com/abdulmughees00090/soooots/blob/main/suggestion-bg1.jpg?raw=true');
-      background-size: cover;
-      background-repeat: repeat;
-      color: #2c2c2c;
-    }
-    header {
-      background-color: #b94e58; /* deep reddish tone */
-      color: #fff;
-      padding: 2rem 1rem 1rem;
-      text-align: center;
-    }
-    header .logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    header img {
-      max-height: 150px;
-    }
-    header .slogan {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      font-weight: 600;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      z-index: 1000;
-    }
-    nav a {
-      text-decoration: none;
-      color: #2c2c2c;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #b94e58;
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      z-index: 1;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .dropdown-content a {
-      color: #2e2e2e;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    .content {
-      max-width: 800px;
-      margin: 3rem auto;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    }
-    .content h1 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-      color: #b94e58;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    input, textarea {
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      resize: vertical;
-    }
-    textarea {
-      min-height: 150px;
-    }
-    button {
-      background-color: #b94e58;
-      color: white;
-      padding: 1rem;
-      border: none;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #a53b45;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    form label {
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-form input,
-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 4px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-form button {
-  padding: 10px 20px;
-  background-color: #b94e58;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-form button:hover {
-  background-color: #b94e58;
-}
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2QEDPZZ5M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Have a new confusion topic you'd like us to cover? Suggest it here and help us expand the Soooots guide!" />
+    <title>Suggest a Confusion — What Soooots Me</title>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P97FMK7L');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://github.com/abdulmughees00090/soooots/blob/main/website-mages/what%20soooots%20me%20(favicon).png?raw=true" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Universal Reset and Box Sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  gtag('config', 'G-B2QEDPZZ5M');
-</script>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: url('https://github.com/abdulmughees00090/soooots/blob/main/suggestion-bg1.jpg?raw=true');
+            background-size: cover;
+            background-repeat: repeat;
+            color: #2c2c2c;
+        }
+
+        header {
+            background-color: #b94e58;
+            color: #fff;
+            padding: 2rem 1rem 1rem;
+            text-align: center;
+        }
+
+        header .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header img {
+            max-height: 150px;
+        }
+
+        header .slogan {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+
+        /* Navbar Styles Start */
+        .header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        nav.navbar {
+            width: 100%;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #b94e58;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #2e2e2e;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            color: #2c2c2c;
+            cursor: pointer;
+            user-select: none;
+            margin-left: 0rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem;
+                gap: 1.5rem;
+            }
+
+            #menu-toggle:checked + .hamburger + nav .menu {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            nav.navbar {
+                width: 100%;
+            }
+
+            .dropdown-content {
+                position: static;
+                background: #f9f9f9;
+                padding-left: 2rem;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
+
+        /* Navbar Styles End */
+
+        .content {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #b94e58;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        input,
+        textarea {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        textarea {
+            min-height: 150px;
+        }
+
+        button {
+            background-color: #b94e58;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a53b45;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 4px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #b94e58;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #b94e58;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 0.95rem;
+                padding: 0.8rem;
+            }
+
+            header {
+                padding: 1.5rem 1rem 1rem;
+            }
+
+            header img {
+                max-height: 120px;
+            }
+
+            header .slogan {
+                font-size: 1rem;
+            }
+
+            .content {
+                margin: 2rem auto;
+                padding: 1.5rem;
+            }
+
+            .content h1 {
+                font-size: 1.75rem;
+            }
+
+            form input,
+            textarea {
+                font-size: 0.95rem;
+                padding: 0.75rem;
+            }
+
+            button {
+                font-size: 0.95rem;
+                padding: 0.75rem 1.5rem;
+            }
+
+            footer {
+                font-size: 0.85rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2QEDPZZ5M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B2QEDPZZ5M');
+    </script>
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
+            <p class="slogan">We're here to help you kill your confusion.</p>
+        </div>
+    </header>
 
-  <header>
-    <div class="logo-container">
-      <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
-      <p class="slogan">We're here to help you kill your confusion.</p>
-    </div>
-  </header>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+    
+        <nav class="navbar">
+            <div class="menu">
+                <a href="/">Home</a>
+                <a href="/who-we-are.html">Who We Are</a>
+                <div class="dropdown">
+                    <a href="#">Confusions</a>
+                    <div class="dropdown-content">
+                        <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
+                        <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
+                        <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
+                        <a href="/where-to-go/where-to-go.html">Where to Go</a>
+                        <a href="/know-myself/know-myself.html">Know Myself</a>
+                        <a href="/things-to-do/things-to-do.html">Things to Do</a>
+                        <a href="/feedback.html">Suggest A Confusion</a>
+                    </div>
+                </div>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/write-to-us.html">Write to Us</a>
+            </div>
+        </nav>
+    </header>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/who-we-are.html">Who We Are</a>
-  <div class="dropdown">
-    <a href="#">Confusions</a>
-    <div class="dropdown-content">
-      <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
-      <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
-      <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
-      <a href="/where-to-go/where-to-go.html">Where to Go</a>
-      <a href="/know-myself/know-myself.html">Know Myself</a>
-      <a href="/things-to-do/things-to-do.html">Things to Do</a>
-      <a href="/feedback.html">Suggest A Confusion</a>
-    </div>
-  </div>
-  <a href="/privacy-policy.html">Privacy Policy</a>
-  <a href="/write-to-us.html">Write to Us</a>
-</nav>
+    <section class="content">
+        <h1>Suggest a Confusion</h1>
+        <form id="feedbackForm">
+            <label for="name">Your Name:</label><br />
+            <input type="text" id="name" name="name" required><br /><br />
 
-  <section class="content">
-    <h1>Suggest a Confusion</h1>
-<form id="feedbackForm">
-  <label for="name">Your Name:</label><br />
-  <input type="text" id="name" name="name" required><br /><br />
+            <label for="email">Your Email:</label><br />
+            <input type="email" id="email" name="email" required><br /><br />
 
-  <label for="email">Your Email:</label><br />
-  <input type="email" id="email" name="email" required><br /><br />
+            <label for="suggestiontype">Suggestion Category:</label><br />
+            <input type="text" id="suggestioncat" name="suggestioncat" required><br /><br />
 
-  <label for="suggestiontype">Suggestion Category:</label><br />
-  <input type="text" id="suggestioncat" name="suggestioncat" required><br /><br />
+            <label for="suggestiondetail">Tell us more about your suggestion:</label><br />
+            <textarea id="suggestiondetails" name="suggestion details" rows="5" required></textarea><br /><br />
 
-  <label for="suggestiondetail">Tell us more about your suggestion:</label><br />
-  <textarea id="suggestiondetails" name="suggestion details" rows="5" required></textarea><br /><br />
-  
-  <button type="submit">Suggest Us</button>
-  <input type="hidden" name="source" value="Feedback Page">
-</form>
+            <button type="submit">Suggest Us</button>
+            <input type="hidden" name="source" value="Feedback Page">
+        </form>
 
-<div id="thankYouMessage" style="display:none; margin-top: 20px; color: #b94e58;">
-  Thank you for your suggestion! ❤️
-</div>
+        <div id="thankYouMessage" style="display:none; margin-top: 20px; color: #b94e58;">
+            Thank you for your suggestion! ❤️
+        </div>
 
 
-  </section>
+    </section>
 
-  <footer>
-    &copy; 2025 Soooots.com — All rights reserved.
-  </footer>
-<script>
-  document.getElementById("feedbackForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+    <footer>
+        &copy; 2025 Soooots.com — All rights reserved.
+    </footer>
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-    const form = e.target;
-    const data = new FormData(form);
+            const form = e.target;
+            const data = new FormData(form);
 
-    fetch("https://formspree.io/f/xjkyljpk", {
-      method: "POST",
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then(response => {
-        if (response.ok) {
-          form.reset();
-          document.getElementById("thankYouMessage").style.display = "block";
-        } else {
-          alert("Oops! Something went wrong. Please try again.");
-        }
-      })
-      .catch(() => {
-        alert("There was a problem submitting your form.");
-      });
-  });
-</script>
-
+            fetch("https://formspree.io/f/xjkyljpk", {
+                method: "POST",
+                body: data,
+                headers: {
+                    Accept: "application/json",
+                },
+            })
+                .then(response => {
+                    if (response.ok) {
+                        form.reset();
+                        document.getElementById("thankYouMessage").style.display = "block";
+                    } else {
+                        alert("Oops! Something went wrong. Please try again.");
+                    }
+                })
+                .catch(() => {
+                    alert("There was a problem submitting your form.");
+                });
+        });
+    </script>
 </body>
 </html>
