@@ -1,325 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get in touch with the Soooots team. Share your suggestions, feedback, or just say hello. We're always here to listen." />
-    <title>Write to Us — What Soooots Me</title>
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-P97FMK7L');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573" crossorigin="anonymous"></script>
-    <link rel="icon" href="https://github.com/abdulmughees00090/soooots/blob/main/website-mages/what%20soooots%20me%20(favicon).png?raw=true" type="image/png" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Get in touch with the Soooots team. Share your suggestions, feedback, or just say hello. We're always here to listen."/>
+  <title>Write to Us — What Soooots Me</title>
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P97FMK7L');</script>
+<!-- End Google Tag Manager -->
+    <!--Google Ads-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573"
+     crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" href="https://github.com/abdulmughees00090/soooots/blob/main/website-mages/what%20soooots%20me%20(favicon).png?raw=true" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: url('https://github.com/abdulmughees00090/soooots/blob/main/website-mages/write-to-us-bg.jpg?raw=true');
+      background-size: cover;
+      background-repeat: repeat;
+      color: #2e2e2e;
+    }
+    header {
+      background-color: #b0dcf1; /* soft sky blue */
+      color: #fff;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    header img {
+      max-height: 150px;
+    }
+    header .slogan {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #007cb9;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: #2e2e2e;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .content {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #0288d1;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 150px;
+    }
+    button {
+      background-color: #0288d1;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0277bd;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2QEDPZZ5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        body {
-            font-family: 'Raleway', sans-serif;
-            background: url('https://github.com/abdulmughees00090/soooots/blob/main/website-mages/write-to-us-bg.jpg?raw=true');
-            background-size: cover;
-            background-repeat: repeat;
-            color: #2e2e2e;
-        }
-
-        header {
-            background-color: #b0dcf1;
-            /* soft sky blue */
-            color: #fff;
-            padding: 2rem 1rem 1rem;
-            text-align: center;
-            position: relative;
-        }
-
-        header .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        header img {
-            max-height: 150px;
-        }
-
-        header .slogan {
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
-            font-weight: 600;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1rem;
-            z-index: 1000;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #2e2e2e;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #007cb9;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: #2e2e2e;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: 3rem auto;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        }
-
-        .content h1 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            color: #0288d1;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        input,
-        textarea {
-            padding: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            resize: vertical;
-            width: 100%;
-            /* Make inputs take full width of their container */
-        }
-
-        textarea {
-            min-height: 150px;
-        }
-
-        button {
-            background-color: #0288d1;
-            color: white;
-            padding: 1rem;
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0277bd;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        /* Responsive adjustments for smaller screens */
-        @media screen and (max-width: 768px) {
-            header {
-                padding: 1.5rem 1rem 1rem;
-            }
-
-            header img {
-                max-height: 120px;
-            }
-
-            header .slogan {
-                font-size: 0.9rem;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav a {
-                font-size: 0.9rem;
-            }
-
-            .content {
-                margin: 2rem auto;
-                padding: 1.5rem;
-            }
-
-            .content h1 {
-                font-size: 1.75rem;
-            }
-
-            form {
-                gap: .1rem;
-            }
-
-            input,
-            textarea {
-                padding: 0.8rem;
-                font-size: 0.9rem;
-            }
-
-            button {
-                padding: 0.8rem;
-                font-size: 0.9rem;
-            }
-
-            footer {
-                font-size: 0.8rem;
-                padding: 1rem;
-            }
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2QEDPZZ5M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-B2QEDPZZ5M');
-    </script>
+  gtag('config', 'G-B2QEDPZZ5M');
+</script>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
-            <p class="slogan">We're here to help you kill your confusion.</p>
-        </div>
-    </header>
+  <header>
+    <div class="logo-container">
+      <img src="https://github.com/abdulmughees00090/soooots/blob/main/Website%20logo/what%20soooots%20me%20(logo).png?raw=true" alt="Soooots Logo">
+      <p class="slogan">We're here to help you kill your confusion.</p>
+    </div>
+  </header>
 
-    <nav>
-        <a href="/">Home</a>
-        <a href="/who-we-are.html">Who We Are</a>
-        <div class="dropdown">
-            <a href="#">Confusions</a>
-            <div class="dropdown-content">
-                <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
-                <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
-                <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
-                <a href="/where-to-go/where-to-go.html">Where to Go</a>
-                <a href="/know-myself/know-myself.html">Know Myself</a>
-                <a href="/things-to-do/things-to-do.html">Things to Do</a>
-                <a href="/feedback.html">Suggest A Confusion</a>
-            </div>
-        </div>
-        <a href="/privacy-policy.html">Privacy Policy</a>
-        <a href="/write-to-us.html">Write to Us</a>
-    </nav>
+<nav>
+  <a href="/">Home</a>
+  <a href="/who-we-are.html">Who We Are</a>
+  <div class="dropdown">
+    <a href="#">Confusions</a>
+    <div class="dropdown-content">
+      <a href="/what-to-wear/what-to-wear.html">What to Wear</a>
+      <a href="/what-to-eat/what-to-eat.html">What to Eat</a>
+      <a href="/dealing-with-people/dealing-with-people.html">Dealing with People</a>
+      <a href="/where-to-go/where-to-go.html">Where to Go</a>
+      <a href="/know-myself/know-myself.html">Know Myself</a>
+      <a href="/things-to-do/things-to-do.html">Things to Do</a>
+      <a href="/feedback.html">Suggest A Confusion</a>
+    </div>
+  </div>
+  <a href="/privacy-policy.html">Privacy Policy</a>
+  <a href="/write-to-us.html">Write to Us</a>
+</nav>
 
-    <section class="content">
-        <h1>Write to Us</h1>
-        <form id="feedbackForm">
-            <label for="name">Your Name:</label><br />
-            <input type="text" id="name" name="name" required><br /><br />
+  <section class="content">
+    <h1>Write to Us</h1>
+    <form id="feedbackForm">
+  <label for="name">Your Name:</label><br />
+  <input type="text" id="name" name="name" required><br /><br />
 
-            <label for="email">Your Email:</label><br />
-            <input type="email" id="email" name="email" required><br /><br />
+  <label for="email">Your Email:</label><br />
+  <input type="email" id="email" name="email" required><br /><br />
 
-            <label for="feedback">What do you want to say:</label><br />
-            <textarea id="feedback" name="message" rows="5" required></textarea><br /><br />
+  <label for="feedback">What do you want to say:</label><br />
+  <textarea id="feedback" name="message" rows="5" required></textarea><br /><br />
 
-            <button type="submit">Submit</button>
-            <input type="hidden" name="source" value="Write to us Page">
-        </form>
+  <button type="submit">Submit</button>
+  <input type="hidden" name="source" value="Write to us Page">
+</form>
 
-        <div id="thankYouMessage" style="display:none; margin-top: 20px; color: blue;">
-            Thank you for your precious words! ❤️
-        </div>
+<div id="thankYouMessage" style="display:none; margin-top: 20px; color: blue;">
+  Thank you for your precious words! ❤️
+</div>
 
-    </section>
+  </section>
 
-    <footer>
-        &copy; 2025 Soooots.com — All rights reserved.
-    </footer>
-    <script>
-        document.getElementById("feedbackForm").addEventListener("submit", function (e) {
-            e.preventDefault();
+  <footer>
+    &copy; 2025 Soooots.com — All rights reserved.
+  </footer>
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-            const form = e.target;
-            const data = new FormData(form);
+    const form = e.target;
+    const data = new FormData(form);
 
-            fetch("https://formspree.io/f/xjkyljpk", {
-                method: "POST",
-                body: data,
-                headers: {
-                    Accept: "application/json",
-                },
-            })
-                .then(response => {
-                    if (response.ok) {
-                        form.reset();
-                        document.getElementById("thankYouMessage").style.display = "block";
-                    } else {
-                        alert("Oops! Something went wrong. Please try again.");
-                    }
-                })
-                .catch(() => {
-                    alert("There was a problem submitting your form.");
-                });
-        });
-    </script>
+    fetch("https://formspree.io/f/xjkyljpk", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          document.getElementById("thankYouMessage").style.display = "block";
+        } else {
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      })
+      .catch(() => {
+        alert("There was a problem submitting your form.");
+      });
+  });
+</script>
 
 </body>
 </html>
